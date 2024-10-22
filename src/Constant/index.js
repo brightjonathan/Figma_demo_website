@@ -46,3 +46,36 @@ export const features = [
         text: 'When you add work to your Slate calendar we automatically calculate useful insights',
     }
 ];
+
+
+
+//Footer links
+export const footer = [
+    {
+        name: "Company",
+        links: [
+            "Home",
+            "Examples",
+            "Pricing",
+            'Updates',
+        ]
+    },
+    {
+        name: "Resources",
+        links: [
+            "Home",
+            "Examples",
+            "Pricing",
+            'Updates',
+        ]
+    },
+    {
+        name: "About",
+        links: [
+            "Home",
+            "Examples",
+            "Pricing",
+            'Updates',
+        ]
+    }
+]
