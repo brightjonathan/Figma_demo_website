@@ -36,7 +36,9 @@ const Navbar = () => {
             )
           })}
         </div>
+        <Link to={'/login'}>
         <button className='w-[139px] h-[50px] rounded-[3px] border-[1px] mt-2'>Login</button>
+        </Link>
     </nav>
 
     {/* mobile responsiveness implenmentation*/}
@@ -48,7 +50,9 @@ const Navbar = () => {
            <img src={logo} alt="website logo" />
           </Link>
         </div>
+        <Link to={'/login'}>
         <button className='w-[130px] h-[45px] rounded-[3px] border-[1px] mt-2' > Login </button>
+        </Link>
 
         <div className=" w-[10%] pt-3  pl-4" onClick={handleMenuClick}>
           {
