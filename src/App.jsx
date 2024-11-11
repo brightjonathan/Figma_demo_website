@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import { auth } from './Firebase/Firebase-config';
 import { signOut} from 'firebase/auth';
+import CreatePost from './Pages/CreatePost';
 
 
 const App = () => {
@@ -28,8 +29,9 @@ const App = () => {
     <Navbar GoogleSignOut={GoogleSignOut} isAuth={isAuth} />
 
     <Routes>
-      <Route path='/' element={<Home/>} />
+      <Route path='/' element={<Home isAuth={isAuth} />} />
       <Route path='/login' element={ <Login setIsAuth={setIsAuth} />} />
+      <Route path='/create-post' element={<CreatePost isAuth={isAuth} /> }/>
     </Routes>
 
    </div>

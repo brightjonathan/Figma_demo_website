@@ -11,13 +11,14 @@ const Navbar = ({GoogleSignOut, isAuth}) => {
        {
         !isAuth ? ( <Link to='/login'>Login</Link> ) : ( 
         <> 
-        <Link to='#'>Create Post</ Link>
-        <button className="login-btn" onClick={GoogleSignOut}>Sign Out</button>
+        <Link to='/create-post'> Create Post </ Link>
+        <button className="login-btn" onClick={GoogleSignOut}> Sign Out </button>
         </> )
        }
-       
     </nav>
   )
 };
 
 export default Navbar;
+
+
